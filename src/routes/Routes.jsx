@@ -8,7 +8,7 @@ import SignUp from "../pages/signUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import Secret from "../pages/shared/secret/Secret";
 import DashBoard from "../layouts/DashBoard";
-import MyCart from "../pages/DashBoard/myCart/myCart";
+import MyCart from "../pages/DashBoard/myCart/MyCart";
 import AllUsers from "../pages/DashBoard/allUsers/AllUsers";
 import AddItem from "../pages/DashBoard/addItem/AddItem";
 import AdminRoute from "./AdminRoute";
