@@ -16,6 +16,7 @@ import ManageItems from "../pages/DashBoard/manageItems/ManageItems";
 import Payment from "../pages/DashBoard/payment/Payment";
 import UserHome from "../pages/DashBoard/userHome/UserHome";
 import AdminHome from "../pages/DashBoard/adminHome/AdminHome";
+import ManageBookings from "../pages/DashBoard/manageBookings/ManageBookings";
 
 export const router = createBrowserRouter([
     {
@@ -81,6 +82,10 @@ export const router = createBrowserRouter([
             {
                 path: 'manageitems',
                 element: <AdminRoute><ManageItems></ManageItems></AdminRoute>
+            },
+            {
+                path: 'manage-bookings',
+                element: <AdminRoute><ManageBookings /></AdminRoute>
             }
         ]
     }

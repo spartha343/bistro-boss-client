@@ -11,8 +11,13 @@ import soupimg from '../../../assets/menu/soup-bg.jpg'
 import useMenu from "../../../hooks/useMenu";
 import SectionTitle from "../../../components/sectionTitle/SectionTitle";
 import MenuCategory from "../menuCategory/MenuCategory";
+import { useEffect } from "react";
 
 const Menu = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     const [menu] = useMenu();
     const desserts = menu.filter(item => item.category === 'dessert');

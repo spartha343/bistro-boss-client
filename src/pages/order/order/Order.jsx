@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import orderCover from '../../../assets/shop/order.jpg'
 import Cover from '../../shared/cover/Cover';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -9,6 +9,9 @@ import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 const Order = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     const categories = ['salad', 'pizza', 'soup', 'dessert', 'drinks']
     const { category } = useParams();
     const initialIndex = categories.indexOf(category)

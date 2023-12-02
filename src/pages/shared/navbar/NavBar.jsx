@@ -22,14 +22,14 @@ const NavBar = () => {
         <li><Link to={isAdmin ? '/dashboard/adminhome' : '/dashboard/userhome'}>Dashboard</Link></li>
         <li>
             <Link to='/dashboard/mycart'>
-                <button className="btn">
+                <button className="btn btn-sm mt-0">
                     <FaShoppingCart></FaShoppingCart>
                     <div className="badge badge-secondary">{cart?.length || 0}</div>
                 </button>
             </Link>
         </li>
         {user ? <>
-            <button className="btn btn-ghost" onClick={handleLogOut}>Log Out</button>
+            <button className="btn btn-sm btn-ghost" onClick={handleLogOut}>Log Out</button>
         </> : <>
             <li><Link to='/login'>Log In</Link></li>
         </>}
@@ -49,12 +49,9 @@ const NavBar = () => {
                     <a className="btn btn-ghost normal-case text-xl">Bistro Boss</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 py-0">
                         {navOptions}
                     </ul>
-                </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
                 </div>
             </div>
         </>
