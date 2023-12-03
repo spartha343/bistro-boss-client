@@ -63,7 +63,7 @@ const LogIn = () => {
                         <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     </div>
                     <div className="card w-full md:w-1/2 max-w-sm shadow-2xl bg-base-100">
-                        <form onSubmit={handleLogIn} className="card-body">
+                        <form onSubmit={handleLogIn} className="card-body max-w-sm my-0">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
@@ -87,7 +87,7 @@ const LogIn = () => {
                             </div>
 
                             {/* TODO make button disabled for captcha */}
-                            <div className="form-control mt-6">
+                            <div className="form-control">
                                 <input disabled={false} type="submit" value="Log In" className="btn btn-primary" />
                             </div>
                         </form>
