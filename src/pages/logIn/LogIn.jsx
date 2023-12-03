@@ -88,7 +88,7 @@ const LogIn = () => {
 
                             {/* TODO make button disabled for captcha */}
                             <div className="form-control">
-                                <input disabled={false} type="submit" value="Log In" className="btn btn-primary" />
+                                <input disabled={disabled} type="submit" value="Log In" className="btn btn-primary" />
                             </div>
                         </form>
                         <p><small>New Here? <Link to='/signup'>Create an account</Link></small></p>
