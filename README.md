@@ -1,7 +1,7 @@
 # Bistro Boss
 
 
-[Live Website](https://client-bistro-boss.netlify.app/ 'Go To Bistro Boss')   ||  [Client Side Code](https://github.com/spartha343/bistro-boss-client 'See Client side code in GitHub')   ||   [Server Side Code](https://github.com/spartha343/bistro-boss-server 'See server side code in GitHub')
+[Live Website](https://client-bistro-boss.netlify.app/ 'Go To Bistro Boss')   ||   [Server Side Code](https://github.com/spartha343/bistro-boss-server 'See server side code in GitHub')
 
 ### Features of this website
 1. Integrated stripe to receieve the payments of all the foods that a user has ordered for himself.
